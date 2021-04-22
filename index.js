@@ -3,6 +3,7 @@
 // const constant_var = 10;
 const express = require("express");
 const app = express();
+const port = process.env.port || 3000;
 
 //Get and post routes
 app.get("/", (req, res) => {
@@ -11,6 +12,6 @@ app.get("/", (req, res) => {
 });
 
 // anonymous function
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log("Started example server on port 3000");
 });
