@@ -3,7 +3,7 @@
 // const constant_var = 10;
 const express = require("express");
 const app = express();
-const port = process.env.port || 3000;
+const port = process.env.PORT || 3000;
 
 //Get and post routes
 app.get("/", (req, res) => {
